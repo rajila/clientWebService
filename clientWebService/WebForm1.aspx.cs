@@ -12,6 +12,7 @@ namespace clientWebService
         protected void Page_Load(object sender, EventArgs e)
         {
             ServiceReferenceOne.ServiceOneClient _service = new ServiceReferenceOne.ServiceOneClient();
+            //ServiceReferenceOne.
             var _mensaje = _service.getMessage("Ronald");
             lblMessage.Text = _mensaje.ToString();
         }
